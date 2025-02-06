@@ -9,7 +9,7 @@ body {
     overflow: hidden;
     background-image: url(FondoInicio.png);
     background-size: cover;
-    background-position: center;
+    background-position: 100% 100%;
     background-repeat: no-repeat;
 }
 
