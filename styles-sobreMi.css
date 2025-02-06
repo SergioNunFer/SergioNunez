@@ -145,9 +145,13 @@ a:hover{
 /* Posición de los botones */
 #prev-btn,
 #next-btn {
+    position: fixed; /* Fijar los botones en la pantalla */
+    bottom: 20px;    /* Espacio desde la parte inferior */
+    left: 50%;       /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Centrar los botones */
     display: inline-block;
-    bottom: 200px;
     margin: 10px 15px;
+    z-index: 1000; /* Asegura que los botones estén por encima de otros elementos */
 }
 
 /* Media Query para pantallas pequeñas (opcional si quieres que se ajuste mejor) */
