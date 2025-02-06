@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url(FondoInicio.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+a{
+    background-color: white;
+    color: black;
+    text-align: center;
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgb(0, 0, 0) inset;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+a:hover{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.712)30%, rgba(247, 247, 247, 0.267)70%);
+    color: white;
+    box-shadow: 0 0 10px rgb(255, 255, 255) inset;
+}
+
+.presentacion {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+.presentacion h1,h2{
+    text-shadow: 0 0 10px black;
+}
