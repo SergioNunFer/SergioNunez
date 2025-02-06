@@ -23,7 +23,7 @@ section {
     justify-content: center;
     position: relative;
     overflow: hidden;
-    padding-top: 50px; /* Evita que el contenido se superponga con el menú */
+    padding-top: 50px;
 }
 
 nav {
@@ -56,10 +56,9 @@ a {
     text-shadow: 0 0 10px black;
 }
 
-/* Estilos para los bloques de contenido */
 .contenido {
-    width: 80%;   /* Asegura que no ocupe el 100% del ancho */
-    height: auto;  /* Asegura que no ocupe el 100% del alto */
+    width: 80%;   
+    height: auto;
     max-height: 80%;
     background: linear-gradient(to top, rgb(0, 0, 0) 30%, rgba(0, 0, 0, 0.26));
     font-size: 1.2rem;
@@ -71,7 +70,7 @@ a {
     opacity: 0;
     transform: translateY(100%);
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-    position: absolute; /* No afecta al flujo del documento */
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
@@ -81,7 +80,7 @@ a {
     align-items: center;
 }
 
-/* Estilos para el bloque visible */
+
 .contenido.visible {
     opacity: 1;
     transform: translateX(-50%) translateY(-50%);
@@ -121,6 +120,7 @@ a:hover{
     box-shadow: 0 0 10px rgb(255, 255, 255) inset;
 }
 
+/*
 .nav-btn {
     position: relative;
     background: rgba(255, 255, 255, 0.596, 0.712);
@@ -133,7 +133,7 @@ a:hover{
     border-radius: 50%;
     transition: background 0.3s;
     z-index: 1000;
-    margin-top: 20px; /* Asegura que los botones estén debajo */
+    margin-top: 20px;
 }
 
 .nav-btn:hover {
@@ -142,30 +142,25 @@ a:hover{
     color: rgb(255, 255, 255);
 }
 
-/* Posición de los botones */
 #prev-btn,
 #next-btn {
-    position: fixed; /* Fijar los botones en la pantalla */
-    bottom: 20px;    /* Espacio desde la parte inferior */
-    left: 50%;       /* Centrar horizontalmente */
-    transform: translateX(-50%); /* Centrar los botones */
     display: inline-block;
+    bottom: 200px;
     margin: 10px 15px;
-    z-index: 1000; /* Asegura que los botones estén por encima de otros elementos */
 }
+*/
 
-/* Media Query para pantallas pequeñas (opcional si quieres que se ajuste mejor) */
 @media (max-width: 768px) {
     section {
-        padding-top: 20px; /* Ajuste de espacio en pantallas pequeñas */
+        padding-top: 20px;
     }
 
     .contenido {
-        width: 95%;   /* Ajustar el ancho */
-        padding: 10px; /* Reducir el padding */
+        width: 95%;  
+        padding: 10px;
     }
 
     .nav-btn {
-        font-size: 1.5rem; /* Reducir el tamaño de los botones */
+        font-size: 1.5rem;
     }
 }
